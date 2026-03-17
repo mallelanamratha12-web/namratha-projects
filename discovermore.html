@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mercedes-Benz</title>
+
+<style>
+
+body{
+    background-color: rgb(228,206,178);
+    font-family: Arial, sans-serif;
+
+
+    animation: fadeIn 1.5s ease;
+}
+
+
+h1{
+    animation: slideDown 1s ease;
+}
+
+
+nav{
+    text-align:center;
+    margin:10px;
+}
+
+nav a{
+    text-decoration:none;
+    margin:10px;
+    color:black;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:white;
+    background:black;
+    padding:6px 12px;
+    border-radius:5px;
+}
+
+
+table{
+    width:70%;
+    border-collapse:collapse;
+    margin:20px auto;
+}
+
+th, td{
+    border:1px solid black;
+    padding:12px;
+    text-align:center;
+}
+
+th{
+    background:black;
+    color:white;
+}
+
+tr:nth-child(even){
+    background:#f2f2f2;
+}
+
+
+tr{
+    transition: all 0.3s ease;
+}
+
+tr:hover{
+    background:#e6e6e6;
+    transform: scale(1.03);
+}
+.innovation{
+    text-align:center;
+    font-style:italic;
+    animation: fadeUp 1.2s ease;
+}
+
+.button2{
+    display:block;
+    margin:25px auto;
+    padding:10px 20px;
+    background:black;
+    border:none;
+    border-radius:6px;
+    transition:0.3s;
+}
+
+.button2 a{
+    color:white;
+    text-decoration:none;
+}
+
+
+.button2:hover{
+    transform: scale(1.1);
+    background:#333;
+}
+
+
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+@keyframes slideDown{
+    from{
+        transform: translateY(-40px);
+        opacity:0;
+    }
+    to{
+        transform: translateY(0);
+        opacity:1;
+    }
+}
+
+@keyframes fadeUp{
+    from{
+        transform: translateY(30px);
+        opacity:0;
+    }
+    to{
+        transform: translateY(0);
+        opacity:1;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<center>
+<h1>Mercedes-Benz</h1>
+<p><b>The Best or Nothing</b></p>
+<hr>
+</center>
+
+<nav>
+<a href="carshowroom.html">Home</a> |
+<a href="MOdals.html">Models</a> |
+<a href="about.html">About</a> |
+<a href="contact.html">Contact</a>
+</nav>
+
+<hr>
+
+<center>
+<h2>About Mercedes-Benz</h2>
+<p>
+Mercedes-Benz is a world-famous automobile brand known for luxury,
+comfort, safety, and innovation. Founded in 1926, the company produces
+premium cars and SUVs trusted by customers around the world.
+</p>
+</center>
+
+<center>
+<h2>Popular Models</h2>
+<ul style="list-style:none;">
+<li>A-Class</li>
+<li>C-Class</li>
+<li>E-Class</li>
+<li>S-Class</li>
+<li>G-Class</li>
+</ul>
+</center>
+
+<h2 class="innovation">140 Years of Innovation</h2>
+
+<table>
+<tr>
+<th>Model</th>
+<th>Approximate Starting Price (INR)</th>
+</tr>
+
+<tr>
+<td>A-Class Limousine</td>
+<td>₹44.45 Lakh</td>
+</tr>
+
+<tr>
+<td>GLA</td>
+<td>₹49.70 Lakh</td>
+</tr>
+
+<tr>
+<td>C-Class</td>
+<td>₹58.60 Lakh</td>
+</tr>
+
+<tr>
+<td>EQA (Electric)</td>
+<td>₹67.20 Lakh</td>
+</tr>
+
+<tr>
+<td>GLC</td>
+<td>₹73.95 Lakh</td>
+</tr>
+
+<tr>
+<td>E-Class</td>
+<td>₹78.50 Lakh</td>
+</tr>
+
+<tr>
+<td>GLE</td>
+<td>₹96.15 Lakh</td>
+</tr>
+
+<tr>
+<td>GLS</td>
+<td>₹1.32 Crore</td>
+</tr>
+
+<tr>
+<td>EQE SUV (Electric)</td>
+<td>₹1.41 Crore</td>
+</tr>
+
+<tr>
+<td>G-Class</td>
+<td>₹2.55 Crore</td>
+</tr>
+
+<tr>
+<td>Maybach EQS</td>
+<td>₹2.28 - ₹2.40 Crore</td>
+</tr>
+
+<tr>
+<td>Maybach SL 680</td>
+<td>₹4.12 Crore</td>
+</tr>
+</table>
+
+<button class="button2">
+<a href="carshowroom.html">⬅ Back to Home</a>
+</button>
+
+<hr>
+
+<center>
+<p>© 2026 Mercedes-Benz | All Rights Reserved</p>
+</center>
+
+</body>
+</html>

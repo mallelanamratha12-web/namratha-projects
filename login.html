@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mercedes-Benz Login</title>
+
+<style>
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, black, #111);
+    color: white;
+    min-height: 100vh;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 30px;
+    letter-spacing: 2px;
+    transition: transform 0.5s ease, color 0.5s ease;
+  }
+
+  h1:hover {
+    transform: scale(1.05);
+    color: silver;
+  }
+
+  p {
+    text-align: center;
+    margin-bottom: 20px;
+    transition: opacity 0.5s ease;
+  }
+
+  .center-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+    padding: 20px;
+  }
+
+
+  .login-box {
+    background: rgba(17, 17, 17, 0.95);
+    padding: 30px 40px;
+    width: 380px;
+    border: 1px solid #333;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(255,255,255,0.1);
+    animation: slideUp 1s ease;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(60px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .login-box:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 0 40px rgba(192,192,192,0.3);
+  }
+
+  .login-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+  }
+
+  label {
+    display: block;
+    margin-top: 15px;
+    font-size: 15px;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background: black;
+    color: white;
+    transition: all 0.3s ease;
+  }
+
+ 
+  input:focus {
+    border-color: silver;
+    box-shadow: 0 0 12px silver;
+    transform: scale(1.02);
+  }
+
+  .buttons {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .buttons input {
+    width: 120px;
+    margin: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: all 0.4s ease;
+  }
+
+  .buttons input[type="submit"] {
+    background: white;
+    color: black;
+  }
+
+  .buttons input[type="submit"]:hover {
+    background: silver;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px silver;
+  }
+
+ 
+  .buttons input[type="reset"] {
+    background: #444;
+    color: white;
+  }
+
+  .buttons input[type="reset"]:hover {
+    background: red;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px red;
+  }
+
+ 
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 26px;
+    }
+
+    .login-box {
+      width: 90%;
+      padding: 25px;
+    }
+
+    input {
+      padding: 9px;
+    }
+  }
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 22px;
+      margin-top: 20px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    .center-box {
+      min-height: 70vh;
+    }
+
+    .login-box {
+      width: 95%;
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .buttons input {
+      width: 100px;
+      padding: 8px;
+      font-size: 14px;
+    }
+  }
+
+
+  @media (min-width: 1200px) {
+    .login-box {
+      width: 420px;
+      padding: 40px 45px;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+</style>
+</head>
+
+<body>
+
+<h1>Welcome to Mercedes-Benz</h1>
+<p>The Best or Nothing</p>
+
+<div class="center-box">
+  <form class="login-box" action="carshowroom.html" method="GET">
+    <h2>Login Details</h2>
+
+    <label>First Name</label>
+    <input type="text" name="firstName" required>
+
+    <label>Last Name</label>
+    <input type="text" name="lastName" required>
+
+    <label>Contact No</label>
+    <input type="tel" name="contact" value="+91" required>
+
+    <label>Email</label>
+    <input type="email" name="email" placeholder="abc@gmail.com" required>
+
+    <div class="buttons">
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>

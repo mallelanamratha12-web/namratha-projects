@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mercedes Showroom</title>
+
+<style>
+
+body{
+    font-family: 'Times New Roman', serif; 
+    background-color: white;
+    margin: 3;
+    animation: fadeIn 1.5s ease;
+}
+
+
+.logo img{
+    animation: logoZoom 1.2s ease;
+}
+
+a{
+    text-decoration:none;
+    margin:10px;
+    color:black;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+a:hover{
+    color:white;
+    background:black;
+    padding:5px 10px;
+    border-radius:5px;
+}
+
+.car-section {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.car-card {
+    display: flex;
+    align-items: flex-end; 
+    background-color: #f2f2f2; 
+    padding: 10px;
+    position: relative;
+    height: 180px; 
+    margin-bottom:200px;
+    margin-top: 80px;
+
+    animation: slideUp 1.2s ease;
+    transition: transform 0.4s;
+}
+
+.car-card:hover{
+    transform: scale(1.03);
+}
+.car-content {
+    flex: 1;
+}
+
+.subtitle {
+    font-family: sans-serif;
+    font-size: 14px;
+    margin: 0;
+    color: #333;
+}
+
+.title {
+    font-size: 42px;
+    margin: 5px 0 0 0;
+    font-weight: 400;
+}
+.car-image-wrapper {
+    flex: 1;
+    position: relative;
+}
+.car-image-wrapper img {
+    width: 120%; 
+    position: absolute;
+    bottom: -80px;
+    right: 0;
+    transform: translateY(-30%);
+    transition: transform 0.4s;
+}
+
+.car-image-wrapper img:hover{
+    transform: scale(1.1) translateY(-30%);
+}
+button{
+    padding:10px 20px;
+    border:none;
+    background:black;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform: scale(1.1);
+    background:#333;
+}
+
+@keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+@keyframes slideUp{
+    from{
+        opacity:0;
+        transform: translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes logoZoom{
+    from{
+        transform:scale(0.5);
+        opacity:0;
+    }
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="logo">
+<img src="logo.png" alt="Mercedes Logo" width="150">
+</div>
+
+<h1 class="showroom"><center>WELCOME TO SHOWROOM</center></h1>
+
+
+<form action="discovermore.html" method="GET">
+
+<h1>Mercedes Showroom</h1>
+
+<p class="tagline">The Best or Nothing</p>
+
+<h2>🚗What Mercedes showrooms typically offer</h2>
+
+<p>At an authorised Mercedes-Benz showroom you usually get:</p>
+
+<ul>
+<li>New car display-from premium sedans to SUVs and electric models</li>
+<li>Test drives - guided by sales staff</li>
+<li>Sales support - help with booking and financing</li>
+<li>Service facility - regular maintenance and genuine spares</li>
+<li>Customer lounge and accessories -including merchandise and lifestyle items</li>
+</ul>
+
+<div class="car-section">
+
+<div class="car-card">
+<div class="car-content">
+<p class="subtitle">Discover the models</p>
+<h2 class="title">Limousine</h2>
+</div>
+
+<div class="car-image-wrapper">
+<img src="Mercedes.avif" alt="Limousine">
+</div>
+</div>
+
+<div class="car-card">
+<div class="car-content">
+<p class="subtitle">Discover the models</p>
+<h2 class="title">SUV Range</h2>
+</div>
+
+<div class="car-image-wrapper">
+<img src="suv 2.webp" alt="SUV">
+</div>
+</div>
+
+</div>
+
+<h2>Luxury & Innovation</h2>
+
+<p>For over 135 years, Mercedes-Benz has been synonymous with automotive excellence, pioneering innovation, and uncompromising luxury.</p>
+
+<p>Our commitment to perfection drives us to continuously push the boundaries of what's possible.</p>
+
+<div>
+<button type="submit">DISCOVER MORE......</button>
+</div>
+
+<button class="button2"><a href="login.html">⬅ Back to Home</a></button>
+
+</form>
+
+</body>
+</html>
